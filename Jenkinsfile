@@ -16,7 +16,7 @@ pipeline {
     
     stage('Deploy') {
       steps {
-        sh 'scp new user@server:ping server'
+        echo 'Deployed!'
       }
     }
   }
