@@ -4,9 +4,3 @@ USER root
 RUN apt-get update && apt-get install -y make && apt-get install -y g++
 # drop back to the regular jenkins user - good practice
 USER jenkins
-
-
-
-
-
-
