@@ -23,9 +23,12 @@ pipeline {
   
   post {
     always {
-      if (currentBuild.result == "FAILURE") {
-        echo 'Pipeline failed'
+      steps {
+        if (currentBuild.result == "FAILURE") {
+          echo 'Pipeline failed'
+        }
       }
     }
   }
 }
+
