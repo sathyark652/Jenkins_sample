@@ -25,10 +25,11 @@ pipeline {
     always {
       steps {
         if (currentBuild.result == "FAILURE") {
-          echo 'Pipeline failed'
+          error 'Pipeline failed'
         }
       }
     }
   }
 }
+
 
